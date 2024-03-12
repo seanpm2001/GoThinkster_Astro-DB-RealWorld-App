@@ -48,7 +48,7 @@ export const User = defineTable({
         username: column.text({unique: true}),
         password: column.text(),
         image: column.text({default: 'https://api.realworld.io/images/smiley-cyrus.jpeg'}),
-        bio: column.text({}),
+        bio: column.text({optional: true}),
         demo: column.boolean({default: false}),
     },
 });
